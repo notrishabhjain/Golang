@@ -8,7 +8,7 @@ func simpleInterest(principal float64, rate float64, time float64) float64 {
 	return (principal * rate * time) / 100
 }
 
-func main() {
+func simpleInterestFunc() {
 	var principal, rate, time float64
 
 	fmt.Println("Enter principal amount:")
