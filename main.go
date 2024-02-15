@@ -6,5 +6,6 @@ func main() {
 	fmt.Println("In main func")
 	//simpleInterestFunc()
 	// compoundInterestFunc()
-	compoundInterestInflationFunc()
+	// compoundInterestInflationFunc()
+	profitCalculatorFunc()
 }
