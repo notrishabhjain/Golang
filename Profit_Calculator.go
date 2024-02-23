@@ -20,7 +20,8 @@ func profitCalculatorFunc() {
 	profit := profitEarnedCalculator(earningBeforeTax, taxRate)
 	fmt.Printf("Profit after Tax : %.2f\n", profit)
 
-	fmt.Printf("Profit Ratio : %2f\n", earningBeforeTax/profit)
+	ratio := fmt.Sprintf("Profit Ratio : %1f\n", earningBeforeTax/profit)
+	fmt.Print(ratio)
 }
 
 func earningBeforeTaxCalculator(revenue float64, expenses float64) float64 {
