@@ -24,10 +24,12 @@ func profitCalculatorFunc() {
 	fmt.Print(ratio)
 }
 
-func earningBeforeTaxCalculator(revenue float64, expenses float64) float64 {
+func earningBeforeTaxCalculator(revenue, expenses float64) float64 {
 	return revenue - expenses
 }
 
-func profitEarnedCalculator(earningBeforeTax float64, taxRate float64) float64 {
-	return earningBeforeTax * (1 - taxRate/100)
+func profitEarnedCalculator(earningBeforeTax, taxRate float64) (eBT float64) {
+	eBT = earningBeforeTax * (1 - taxRate/100)
+	return eBT
+	// return
 }
